@@ -9,7 +9,7 @@ foreign import makeClient """
     function makeClient(opts){
         var GitHubApi = require('github');
 
-        return GitHubApi(opts);
+        return new GitHubApi(opts);
     }
 """ :: forall a. { | a } -> Client
 
@@ -22,3 +22,6 @@ foreign import getClientFn """
         return client[propName][fnName];
     }}}
 """ :: String -> String -> Client -> ClientFn
+
+getFollowingFromUser :: forall a b. Client -> { | a} -> Thunk { | b}
+getFollowingFromUser client = runThunkFn1 $ getClientFn "user" "getFollowingFromUser" client
