@@ -12,5 +12,8 @@
   "scripts": {
     "postinstall": "bower install",
     "test": "grunt"
+  },
+  "dependencies": {
+    "github": "^0.2.2"
   }
 }

@@ -5,3 +5,5 @@ node_modules/
 output/
 tmp/
 
+.cabal-sandbox
+cabal.sandbox.config
