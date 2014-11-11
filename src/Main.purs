@@ -6,6 +6,7 @@ import Control.Monad.Eff
 import Node.Thunk
 
 import GitHub
+import GitHub.User
 
 foreign import printInspect """
     function printInspect(any) {

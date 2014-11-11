@@ -17,6 +17,3 @@ foreign import makeClient """
         return new GitHubApi(opts);
     }
 """ :: forall a. { | a } -> Client
-
-getFollowingFromUser :: ApiFn
-getFollowingFromUser = clientFnWrapper "user" "getFollowingFromUser"
