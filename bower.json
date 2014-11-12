@@ -1,5 +1,5 @@
 {
-  "name": "purescript-github-node",
+  "name": "purescript-node-github",
   "private": true,
   "ignore": [
     "**/.*",
