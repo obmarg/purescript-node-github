@@ -2,8 +2,8 @@ module GitHub.GitIgnore where
 
 import GitHub.Common
 
-templates :: ApiFn
+templates :: forall a. ApiFn a
 templates = clientFnWrapper "gitignore" "templates"
 
-template :: ApiFn
+template :: forall a. ApiFn a
 template = clientFnWrapper "gitignore" "template"

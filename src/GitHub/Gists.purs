@@ -2,53 +2,53 @@ module GitHub.Gists where
 
 import GitHub.Common
 
-getAll :: ApiFn
+getAll :: forall a. ApiFn a
 getAll = clientFnWrapper "gists" "getAll"
 
-getFromUser :: ApiFn
+getFromUser :: forall a. ApiFn a
 getFromUser = clientFnWrapper "gists" "getFromUser"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "gists" "create"
 
-edit :: ApiFn
+edit :: forall a. ApiFn a
 edit = clientFnWrapper "gists" "edit"
 
-public :: ApiFn
+public :: forall a. ApiFn a
 public = clientFnWrapper "gists" "public"
 
-starred :: ApiFn
+starred :: forall a. ApiFn a
 starred = clientFnWrapper "gists" "starred"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "gists" "get"
 
-star :: ApiFn
+star :: forall a. ApiFn a
 star = clientFnWrapper "gists" "star"
 
-deleteStar :: ApiFn
+deleteStar :: forall a. ApiFn a
 deleteStar = clientFnWrapper "gists" "deleteStar"
 
-checkStar :: ApiFn
+checkStar :: forall a. ApiFn a
 checkStar = clientFnWrapper "gists" "checkStar"
 
-fork :: ApiFn
+fork :: forall a. ApiFn a
 fork = clientFnWrapper "gists" "fork"
 
-delete :: ApiFn
+delete :: forall a. ApiFn a
 delete = clientFnWrapper "gists" "delete"
 
-getComments :: ApiFn
+getComments :: forall a. ApiFn a
 getComments = clientFnWrapper "gists" "getComments"
 
-getComment :: ApiFn
+getComment :: forall a. ApiFn a
 getComment = clientFnWrapper "gists" "getComment"
 
-createComment :: ApiFn
+createComment :: forall a. ApiFn a
 createComment = clientFnWrapper "gists" "createComment"
 
-editComment :: ApiFn
+editComment :: forall a. ApiFn a
 editComment = clientFnWrapper "gists" "editComment"
 
-deleteComment :: ApiFn
+deleteComment :: forall a. ApiFn a
 deleteComment = clientFnWrapper "gists" "deleteComment"

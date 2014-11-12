@@ -2,17 +2,17 @@ module GitHub.Authorization where
 
 import GitHub.Common
 
-getAll :: ApiFn
+getAll :: forall a. ApiFn a
 getAll = clientFnWrapper "authorization" "getAll"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "authorization" "get"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "authorization" "create"
 
-update :: ApiFn
+update :: forall a. ApiFn a
 update = clientFnWrapper "authorization" "update"
 
-delete :: ApiFn
+delete :: forall a. ApiFn a
 delete = clientFnWrapper "authorization" "delete"

@@ -2,71 +2,71 @@ module GitHub.Orgs where
 
 import GitHub.Common
 
-getFromUser :: ApiFn
+getFromUser :: forall a. ApiFn a
 getFromUser = clientFnWrapper "orgs" "getFromUser"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "orgs" "get"
 
-update :: ApiFn
+update :: forall a. ApiFn a
 update = clientFnWrapper "orgs" "update"
 
-getMembers :: ApiFn
+getMembers :: forall a. ApiFn a
 getMembers = clientFnWrapper "orgs" "getMembers"
 
-getMember :: ApiFn
+getMember :: forall a. ApiFn a
 getMember = clientFnWrapper "orgs" "getMember"
 
-removeMember :: ApiFn
+removeMember :: forall a. ApiFn a
 removeMember = clientFnWrapper "orgs" "removeMember"
 
-getPublicMembers :: ApiFn
+getPublicMembers :: forall a. ApiFn a
 getPublicMembers = clientFnWrapper "orgs" "getPublicMembers"
 
-getPublicMember :: ApiFn
+getPublicMember :: forall a. ApiFn a
 getPublicMember = clientFnWrapper "orgs" "getPublicMember"
 
-publicizeMembership :: ApiFn
+publicizeMembership :: forall a. ApiFn a
 publicizeMembership = clientFnWrapper "orgs" "publicizeMembership"
 
-concealMembership :: ApiFn
+concealMembership :: forall a. ApiFn a
 concealMembership = clientFnWrapper "orgs" "concealMembership"
 
-getTeams :: ApiFn
+getTeams :: forall a. ApiFn a
 getTeams = clientFnWrapper "orgs" "getTeams"
 
-getTeam :: ApiFn
+getTeam :: forall a. ApiFn a
 getTeam = clientFnWrapper "orgs" "getTeam"
 
-createTeam :: ApiFn
+createTeam :: forall a. ApiFn a
 createTeam = clientFnWrapper "orgs" "createTeam"
 
-updateTeam :: ApiFn
+updateTeam :: forall a. ApiFn a
 updateTeam = clientFnWrapper "orgs" "updateTeam"
 
-deleteTeam :: ApiFn
+deleteTeam :: forall a. ApiFn a
 deleteTeam = clientFnWrapper "orgs" "deleteTeam"
 
-getTeamMembers :: ApiFn
+getTeamMembers :: forall a. ApiFn a
 getTeamMembers = clientFnWrapper "orgs" "getTeamMembers"
 
-getTeamMember :: ApiFn
+getTeamMember :: forall a. ApiFn a
 getTeamMember = clientFnWrapper "orgs" "getTeamMember"
 
-addTeamMember :: ApiFn
+addTeamMember :: forall a. ApiFn a
 addTeamMember = clientFnWrapper "orgs" "addTeamMember"
 
-deleteTeamMember :: ApiFn
+deleteTeamMember :: forall a. ApiFn a
 deleteTeamMember = clientFnWrapper "orgs" "deleteTeamMember"
 
-getTeamRepos :: ApiFn
+getTeamRepos :: forall a. ApiFn a
 getTeamRepos = clientFnWrapper "orgs" "getTeamRepos"
 
-getTeamRepo :: ApiFn
+getTeamRepo :: forall a. ApiFn a
 getTeamRepo = clientFnWrapper "orgs" "getTeamRepo"
 
-addTeamRepo :: ApiFn
+addTeamRepo :: forall a. ApiFn a
 addTeamRepo = clientFnWrapper "orgs" "addTeamRepo"
 
-deleteTeamRepo :: ApiFn
+deleteTeamRepo :: forall a. ApiFn a
 deleteTeamRepo = clientFnWrapper "orgs" "deleteTeamRepo"

@@ -2,8 +2,8 @@ module GitHub.Statuses where
 
 import GitHub.Common
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "statuses" "get"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "statuses" "create"

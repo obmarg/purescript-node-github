@@ -2,47 +2,47 @@ module GitHub.PullRequests where
 
 import GitHub.Common
 
-getAll :: ApiFn
+getAll :: forall a. ApiFn a
 getAll = clientFnWrapper "pullRequests" "getAll"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "pullRequests" "get"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "pullRequests" "create"
 
-createFromIssue :: ApiFn
+createFromIssue :: forall a. ApiFn a
 createFromIssue = clientFnWrapper "pullRequests" "createFromIssue"
 
-update :: ApiFn
+update :: forall a. ApiFn a
 update = clientFnWrapper "pullRequests" "update"
 
-getCommits :: ApiFn
+getCommits :: forall a. ApiFn a
 getCommits = clientFnWrapper "pullRequests" "getCommits"
 
-getFiles :: ApiFn
+getFiles :: forall a. ApiFn a
 getFiles = clientFnWrapper "pullRequests" "getFiles"
 
-getMerged :: ApiFn
+getMerged :: forall a. ApiFn a
 getMerged = clientFnWrapper "pullRequests" "getMerged"
 
-merge :: ApiFn
+merge :: forall a. ApiFn a
 merge = clientFnWrapper "pullRequests" "merge"
 
-getComments :: ApiFn
+getComments :: forall a. ApiFn a
 getComments = clientFnWrapper "pullRequests" "getComments"
 
-getComment :: ApiFn
+getComment :: forall a. ApiFn a
 getComment = clientFnWrapper "pullRequests" "getComment"
 
-createComment :: ApiFn
+createComment :: forall a. ApiFn a
 createComment = clientFnWrapper "pullRequests" "createComment"
 
-createCommentReply :: ApiFn
+createCommentReply :: forall a. ApiFn a
 createCommentReply = clientFnWrapper "pullRequests" "createCommentReply"
 
-updateComment :: ApiFn
+updateComment :: forall a. ApiFn a
 updateComment = clientFnWrapper "pullRequests" "updateComment"
 
-deleteComment :: ApiFn
+deleteComment :: forall a. ApiFn a
 deleteComment = clientFnWrapper "pullRequests" "deleteComment"

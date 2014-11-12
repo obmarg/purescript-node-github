@@ -12,14 +12,14 @@ Also requires jinja2 & toolz installed via pip.
 '''
 import re
 import os
-from toolz import groupby, pluck, concat
+from toolz import groupby, pluck
 from jinja2 import Template
 
 FILE_TEMPLATE = Template('''module GitHub.{{module_name}} where
 
 import GitHub.Common
 {% for method_name in methods %}
-{{method_name}} :: ApiFn
+{{method_name}} :: forall a. ApiFn a
 {{method_name}} = clientFnWrapper "{{object_name}}" "{{method_name}}"
 {% endfor %}
 ''')

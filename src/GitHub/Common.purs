@@ -13,7 +13,7 @@ foreign import data Client :: *
 -- |
 -- The type of all the JS GitHubApi functions as returned by getClientFn
 --
-type ClientFn = forall a b. ThunkFn1 { | a} { |b}
+type ClientFn rv = forall a b. ThunkFn1 { | a} rv
 
 -- |
 -- Gets a specific clientFn from one of the GitHub clients properties
@@ -24,16 +24,16 @@ foreign import getClientFn """
     return function(client) {
         return client[propName][fnName];
     }}}
-""" :: String -> String -> Client -> ClientFn
+""" :: forall a. String -> String -> Client -> ClientFn a
 
 -- |
 -- The type of each of the functions we expose as part of our API.
 --
-type ApiFn = forall a b. Client -> { | a} -> Thunk { | b}
+type ApiFn rv = forall a. Client -> { | a} -> Thunk rv
 
 -- |
 -- clientFnWrapper creates a function for our API from the name of the function
 -- and the name of the property on the GitHubApi object that holds it.
 --
-clientFnWrapper :: String -> String -> ApiFn
+clientFnWrapper :: forall a. String -> String -> ApiFn a
 clientFnWrapper propName fnName client = runThunkFn1 $ getClientFn propName fnName client

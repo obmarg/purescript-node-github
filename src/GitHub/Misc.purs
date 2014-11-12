@@ -2,11 +2,11 @@ module GitHub.Misc where
 
 import GitHub.Common
 
-emojis :: ApiFn
+emojis :: forall a. ApiFn a
 emojis = clientFnWrapper "misc" "emojis"
 
-meta :: ApiFn
+meta :: forall a. ApiFn a
 meta = clientFnWrapper "misc" "meta"
 
-rateLimit :: ApiFn
+rateLimit :: forall a. ApiFn a
 rateLimit = clientFnWrapper "misc" "rateLimit"

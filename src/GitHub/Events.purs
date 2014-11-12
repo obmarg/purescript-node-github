@@ -2,32 +2,32 @@ module GitHub.Events where
 
 import GitHub.Common
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "events" "get"
 
-getFromRepo :: ApiFn
+getFromRepo :: forall a. ApiFn a
 getFromRepo = clientFnWrapper "events" "getFromRepo"
 
-getFromRepoIssues :: ApiFn
+getFromRepoIssues :: forall a. ApiFn a
 getFromRepoIssues = clientFnWrapper "events" "getFromRepoIssues"
 
-getFromRepoNetwork :: ApiFn
+getFromRepoNetwork :: forall a. ApiFn a
 getFromRepoNetwork = clientFnWrapper "events" "getFromRepoNetwork"
 
-getFromOrg :: ApiFn
+getFromOrg :: forall a. ApiFn a
 getFromOrg = clientFnWrapper "events" "getFromOrg"
 
-getReceived :: ApiFn
+getReceived :: forall a. ApiFn a
 getReceived = clientFnWrapper "events" "getReceived"
 
-getReceivedPublic :: ApiFn
+getReceivedPublic :: forall a. ApiFn a
 getReceivedPublic = clientFnWrapper "events" "getReceivedPublic"
 
-getFromUser :: ApiFn
+getFromUser :: forall a. ApiFn a
 getFromUser = clientFnWrapper "events" "getFromUser"
 
-getFromUserPublic :: ApiFn
+getFromUserPublic :: forall a. ApiFn a
 getFromUserPublic = clientFnWrapper "events" "getFromUserPublic"
 
-getFromUserOrg :: ApiFn
+getFromUserOrg :: forall a. ApiFn a
 getFromUserOrg = clientFnWrapper "events" "getFromUserOrg"

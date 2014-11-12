@@ -2,77 +2,77 @@ module GitHub.Issues where
 
 import GitHub.Common
 
-getAll :: ApiFn
+getAll :: forall a. ApiFn a
 getAll = clientFnWrapper "issues" "getAll"
 
-repoIssues :: ApiFn
+repoIssues :: forall a. ApiFn a
 repoIssues = clientFnWrapper "issues" "repoIssues"
 
-getRepoIssue :: ApiFn
+getRepoIssue :: forall a. ApiFn a
 getRepoIssue = clientFnWrapper "issues" "getRepoIssue"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "issues" "create"
 
-edit :: ApiFn
+edit :: forall a. ApiFn a
 edit = clientFnWrapper "issues" "edit"
 
-repoComments :: ApiFn
+repoComments :: forall a. ApiFn a
 repoComments = clientFnWrapper "issues" "repoComments"
 
-getComments :: ApiFn
+getComments :: forall a. ApiFn a
 getComments = clientFnWrapper "issues" "getComments"
 
-getComment :: ApiFn
+getComment :: forall a. ApiFn a
 getComment = clientFnWrapper "issues" "getComment"
 
-createComment :: ApiFn
+createComment :: forall a. ApiFn a
 createComment = clientFnWrapper "issues" "createComment"
 
-editComment :: ApiFn
+editComment :: forall a. ApiFn a
 editComment = clientFnWrapper "issues" "editComment"
 
-deleteComment :: ApiFn
+deleteComment :: forall a. ApiFn a
 deleteComment = clientFnWrapper "issues" "deleteComment"
 
-getEvents :: ApiFn
+getEvents :: forall a. ApiFn a
 getEvents = clientFnWrapper "issues" "getEvents"
 
-getRepoEvents :: ApiFn
+getRepoEvents :: forall a. ApiFn a
 getRepoEvents = clientFnWrapper "issues" "getRepoEvents"
 
-getEvent :: ApiFn
+getEvent :: forall a. ApiFn a
 getEvent = clientFnWrapper "issues" "getEvent"
 
-getLabels :: ApiFn
+getLabels :: forall a. ApiFn a
 getLabels = clientFnWrapper "issues" "getLabels"
 
-getLabel :: ApiFn
+getLabel :: forall a. ApiFn a
 getLabel = clientFnWrapper "issues" "getLabel"
 
-createLabel :: ApiFn
+createLabel :: forall a. ApiFn a
 createLabel = clientFnWrapper "issues" "createLabel"
 
-updateLabel :: ApiFn
+updateLabel :: forall a. ApiFn a
 updateLabel = clientFnWrapper "issues" "updateLabel"
 
-deleteLabel :: ApiFn
+deleteLabel :: forall a. ApiFn a
 deleteLabel = clientFnWrapper "issues" "deleteLabel"
 
-getIssueLabels :: ApiFn
+getIssueLabels :: forall a. ApiFn a
 getIssueLabels = clientFnWrapper "issues" "getIssueLabels"
 
-getAllMilestones :: ApiFn
+getAllMilestones :: forall a. ApiFn a
 getAllMilestones = clientFnWrapper "issues" "getAllMilestones"
 
-getMilestone :: ApiFn
+getMilestone :: forall a. ApiFn a
 getMilestone = clientFnWrapper "issues" "getMilestone"
 
-createMilestone :: ApiFn
+createMilestone :: forall a. ApiFn a
 createMilestone = clientFnWrapper "issues" "createMilestone"
 
-updateMilestone :: ApiFn
+updateMilestone :: forall a. ApiFn a
 updateMilestone = clientFnWrapper "issues" "updateMilestone"
 
-deleteMilestone :: ApiFn
+deleteMilestone :: forall a. ApiFn a
 deleteMilestone = clientFnWrapper "issues" "deleteMilestone"

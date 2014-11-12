@@ -2,29 +2,29 @@ module GitHub.Releases where
 
 import GitHub.Common
 
-listReleases :: ApiFn
+listReleases :: forall a. ApiFn a
 listReleases = clientFnWrapper "releases" "listReleases"
 
-getRelease :: ApiFn
+getRelease :: forall a. ApiFn a
 getRelease = clientFnWrapper "releases" "getRelease"
 
-createRelease :: ApiFn
+createRelease :: forall a. ApiFn a
 createRelease = clientFnWrapper "releases" "createRelease"
 
-editRelease :: ApiFn
+editRelease :: forall a. ApiFn a
 editRelease = clientFnWrapper "releases" "editRelease"
 
-deleteRelease :: ApiFn
+deleteRelease :: forall a. ApiFn a
 deleteRelease = clientFnWrapper "releases" "deleteRelease"
 
-listAssets :: ApiFn
+listAssets :: forall a. ApiFn a
 listAssets = clientFnWrapper "releases" "listAssets"
 
-getAsset :: ApiFn
+getAsset :: forall a. ApiFn a
 getAsset = clientFnWrapper "releases" "getAsset"
 
-editAsset :: ApiFn
+editAsset :: forall a. ApiFn a
 editAsset = clientFnWrapper "releases" "editAsset"
 
-deleteAsset :: ApiFn
+deleteAsset :: forall a. ApiFn a
 deleteAsset = clientFnWrapper "releases" "deleteAsset"

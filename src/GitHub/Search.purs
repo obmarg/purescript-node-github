@@ -2,14 +2,14 @@ module GitHub.Search where
 
 import GitHub.Common
 
-issues :: ApiFn
+issues :: forall a. ApiFn a
 issues = clientFnWrapper "search" "issues"
 
-repos :: ApiFn
+repos :: forall a. ApiFn a
 repos = clientFnWrapper "search" "repos"
 
-users :: ApiFn
+users :: forall a. ApiFn a
 users = clientFnWrapper "search" "users"
 
-email :: ApiFn
+email :: forall a. ApiFn a
 email = clientFnWrapper "search" "email"

@@ -2,191 +2,191 @@ module GitHub.Repos where
 
 import GitHub.Common
 
-getAll :: ApiFn
+getAll :: forall a. ApiFn a
 getAll = clientFnWrapper "repos" "getAll"
 
-getFromUser :: ApiFn
+getFromUser :: forall a. ApiFn a
 getFromUser = clientFnWrapper "repos" "getFromUser"
 
-getFromOrg :: ApiFn
+getFromOrg :: forall a. ApiFn a
 getFromOrg = clientFnWrapper "repos" "getFromOrg"
 
-create :: ApiFn
+create :: forall a. ApiFn a
 create = clientFnWrapper "repos" "create"
 
-createFromOrg :: ApiFn
+createFromOrg :: forall a. ApiFn a
 createFromOrg = clientFnWrapper "repos" "createFromOrg"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "repos" "get"
 
-update :: ApiFn
+update :: forall a. ApiFn a
 update = clientFnWrapper "repos" "update"
 
-delete :: ApiFn
+delete :: forall a. ApiFn a
 delete = clientFnWrapper "repos" "delete"
 
-merge :: ApiFn
+merge :: forall a. ApiFn a
 merge = clientFnWrapper "repos" "merge"
 
-getContributors :: ApiFn
+getContributors :: forall a. ApiFn a
 getContributors = clientFnWrapper "repos" "getContributors"
 
-getLanguages :: ApiFn
+getLanguages :: forall a. ApiFn a
 getLanguages = clientFnWrapper "repos" "getLanguages"
 
-getTeams :: ApiFn
+getTeams :: forall a. ApiFn a
 getTeams = clientFnWrapper "repos" "getTeams"
 
-getTags :: ApiFn
+getTags :: forall a. ApiFn a
 getTags = clientFnWrapper "repos" "getTags"
 
-getBranches :: ApiFn
+getBranches :: forall a. ApiFn a
 getBranches = clientFnWrapper "repos" "getBranches"
 
-getBranch :: ApiFn
+getBranch :: forall a. ApiFn a
 getBranch = clientFnWrapper "repos" "getBranch"
 
-getCollaborators :: ApiFn
+getCollaborators :: forall a. ApiFn a
 getCollaborators = clientFnWrapper "repos" "getCollaborators"
 
-getCollaborator :: ApiFn
+getCollaborator :: forall a. ApiFn a
 getCollaborator = clientFnWrapper "repos" "getCollaborator"
 
-addCollaborator :: ApiFn
+addCollaborator :: forall a. ApiFn a
 addCollaborator = clientFnWrapper "repos" "addCollaborator"
 
-removeCollaborator :: ApiFn
+removeCollaborator :: forall a. ApiFn a
 removeCollaborator = clientFnWrapper "repos" "removeCollaborator"
 
-getCommits :: ApiFn
+getCommits :: forall a. ApiFn a
 getCommits = clientFnWrapper "repos" "getCommits"
 
-getCommit :: ApiFn
+getCommit :: forall a. ApiFn a
 getCommit = clientFnWrapper "repos" "getCommit"
 
-getAllCommitComments :: ApiFn
+getAllCommitComments :: forall a. ApiFn a
 getAllCommitComments = clientFnWrapper "repos" "getAllCommitComments"
 
-getCommitComments :: ApiFn
+getCommitComments :: forall a. ApiFn a
 getCommitComments = clientFnWrapper "repos" "getCommitComments"
 
-createCommitComment :: ApiFn
+createCommitComment :: forall a. ApiFn a
 createCommitComment = clientFnWrapper "repos" "createCommitComment"
 
-getCommitComment :: ApiFn
+getCommitComment :: forall a. ApiFn a
 getCommitComment = clientFnWrapper "repos" "getCommitComment"
 
-updateCommitComment :: ApiFn
+updateCommitComment :: forall a. ApiFn a
 updateCommitComment = clientFnWrapper "repos" "updateCommitComment"
 
-compareCommits :: ApiFn
+compareCommits :: forall a. ApiFn a
 compareCommits = clientFnWrapper "repos" "compareCommits"
 
-deleteCommitComment :: ApiFn
+deleteCommitComment :: forall a. ApiFn a
 deleteCommitComment = clientFnWrapper "repos" "deleteCommitComment"
 
-getReadme :: ApiFn
+getReadme :: forall a. ApiFn a
 getReadme = clientFnWrapper "repos" "getReadme"
 
-getContent :: ApiFn
+getContent :: forall a. ApiFn a
 getContent = clientFnWrapper "repos" "getContent"
 
-createContent :: ApiFn
+createContent :: forall a. ApiFn a
 createContent = clientFnWrapper "repos" "createContent"
 
-createFile :: ApiFn
+createFile :: forall a. ApiFn a
 createFile = clientFnWrapper "repos" "createFile"
 
-updateFile :: ApiFn
+updateFile :: forall a. ApiFn a
 updateFile = clientFnWrapper "repos" "updateFile"
 
-deleteFile :: ApiFn
+deleteFile :: forall a. ApiFn a
 deleteFile = clientFnWrapper "repos" "deleteFile"
 
-getArchiveLink :: ApiFn
+getArchiveLink :: forall a. ApiFn a
 getArchiveLink = clientFnWrapper "repos" "getArchiveLink"
 
-getDownloads :: ApiFn
+getDownloads :: forall a. ApiFn a
 getDownloads = clientFnWrapper "repos" "getDownloads"
 
-getDownload :: ApiFn
+getDownload :: forall a. ApiFn a
 getDownload = clientFnWrapper "repos" "getDownload"
 
-deleteDownload :: ApiFn
+deleteDownload :: forall a. ApiFn a
 deleteDownload = clientFnWrapper "repos" "deleteDownload"
 
-getForks :: ApiFn
+getForks :: forall a. ApiFn a
 getForks = clientFnWrapper "repos" "getForks"
 
-fork :: ApiFn
+fork :: forall a. ApiFn a
 fork = clientFnWrapper "repos" "fork"
 
-getKeys :: ApiFn
+getKeys :: forall a. ApiFn a
 getKeys = clientFnWrapper "repos" "getKeys"
 
-getKey :: ApiFn
+getKey :: forall a. ApiFn a
 getKey = clientFnWrapper "repos" "getKey"
 
-createKey :: ApiFn
+createKey :: forall a. ApiFn a
 createKey = clientFnWrapper "repos" "createKey"
 
-updateKey :: ApiFn
+updateKey :: forall a. ApiFn a
 updateKey = clientFnWrapper "repos" "updateKey"
 
-deleteKey :: ApiFn
+deleteKey :: forall a. ApiFn a
 deleteKey = clientFnWrapper "repos" "deleteKey"
 
-getStargazers :: ApiFn
+getStargazers :: forall a. ApiFn a
 getStargazers = clientFnWrapper "repos" "getStargazers"
 
-getStarred :: ApiFn
+getStarred :: forall a. ApiFn a
 getStarred = clientFnWrapper "repos" "getStarred"
 
-getStarredFromUser :: ApiFn
+getStarredFromUser :: forall a. ApiFn a
 getStarredFromUser = clientFnWrapper "repos" "getStarredFromUser"
 
-getStarring :: ApiFn
+getStarring :: forall a. ApiFn a
 getStarring = clientFnWrapper "repos" "getStarring"
 
-star :: ApiFn
+star :: forall a. ApiFn a
 star = clientFnWrapper "repos" "star"
 
-unStar :: ApiFn
+unStar :: forall a. ApiFn a
 unStar = clientFnWrapper "repos" "unStar"
 
-getWatchers :: ApiFn
+getWatchers :: forall a. ApiFn a
 getWatchers = clientFnWrapper "repos" "getWatchers"
 
-getWatched :: ApiFn
+getWatched :: forall a. ApiFn a
 getWatched = clientFnWrapper "repos" "getWatched"
 
-getWatchedFromUser :: ApiFn
+getWatchedFromUser :: forall a. ApiFn a
 getWatchedFromUser = clientFnWrapper "repos" "getWatchedFromUser"
 
-getWatching :: ApiFn
+getWatching :: forall a. ApiFn a
 getWatching = clientFnWrapper "repos" "getWatching"
 
-watch :: ApiFn
+watch :: forall a. ApiFn a
 watch = clientFnWrapper "repos" "watch"
 
-unWatch :: ApiFn
+unWatch :: forall a. ApiFn a
 unWatch = clientFnWrapper "repos" "unWatch"
 
-getHooks :: ApiFn
+getHooks :: forall a. ApiFn a
 getHooks = clientFnWrapper "repos" "getHooks"
 
-getHook :: ApiFn
+getHook :: forall a. ApiFn a
 getHook = clientFnWrapper "repos" "getHook"
 
-createHook :: ApiFn
+createHook :: forall a. ApiFn a
 createHook = clientFnWrapper "repos" "createHook"
 
-updateHook :: ApiFn
+updateHook :: forall a. ApiFn a
 updateHook = clientFnWrapper "repos" "updateHook"
 
-testHook :: ApiFn
+testHook :: forall a. ApiFn a
 testHook = clientFnWrapper "repos" "testHook"
 
-deleteHook :: ApiFn
+deleteHook :: forall a. ApiFn a
 deleteHook = clientFnWrapper "repos" "deleteHook"

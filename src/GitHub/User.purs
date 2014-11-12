@@ -2,62 +2,62 @@ module GitHub.User where
 
 import GitHub.Common
 
-getFrom :: ApiFn
+getFrom :: forall a. ApiFn a
 getFrom = clientFnWrapper "user" "getFrom"
 
-get :: ApiFn
+get :: forall a. ApiFn a
 get = clientFnWrapper "user" "get"
 
-update :: ApiFn
+update :: forall a. ApiFn a
 update = clientFnWrapper "user" "update"
 
-getOrgs :: ApiFn
+getOrgs :: forall a. ApiFn a
 getOrgs = clientFnWrapper "user" "getOrgs"
 
-getTeams :: ApiFn
+getTeams :: forall a. ApiFn a
 getTeams = clientFnWrapper "user" "getTeams"
 
-getEmails :: ApiFn
+getEmails :: forall a. ApiFn a
 getEmails = clientFnWrapper "user" "getEmails"
 
-addEmails :: ApiFn
+addEmails :: forall a. ApiFn a
 addEmails = clientFnWrapper "user" "addEmails"
 
-deleteEmails :: ApiFn
+deleteEmails :: forall a. ApiFn a
 deleteEmails = clientFnWrapper "user" "deleteEmails"
 
-getFollowers :: ApiFn
+getFollowers :: forall a. ApiFn a
 getFollowers = clientFnWrapper "user" "getFollowers"
 
-getFollowingFromUser :: ApiFn
+getFollowingFromUser :: forall a. ApiFn a
 getFollowingFromUser = clientFnWrapper "user" "getFollowingFromUser"
 
-getFollowing :: ApiFn
+getFollowing :: forall a. ApiFn a
 getFollowing = clientFnWrapper "user" "getFollowing"
 
-getFollowUser :: ApiFn
+getFollowUser :: forall a. ApiFn a
 getFollowUser = clientFnWrapper "user" "getFollowUser"
 
-followUser :: ApiFn
+followUser :: forall a. ApiFn a
 followUser = clientFnWrapper "user" "followUser"
 
-unFollowUser :: ApiFn
+unFollowUser :: forall a. ApiFn a
 unFollowUser = clientFnWrapper "user" "unFollowUser"
 
-getKeys :: ApiFn
+getKeys :: forall a. ApiFn a
 getKeys = clientFnWrapper "user" "getKeys"
 
-getKeysFromUser :: ApiFn
+getKeysFromUser :: forall a. ApiFn a
 getKeysFromUser = clientFnWrapper "user" "getKeysFromUser"
 
-getKey :: ApiFn
+getKey :: forall a. ApiFn a
 getKey = clientFnWrapper "user" "getKey"
 
-createKey :: ApiFn
+createKey :: forall a. ApiFn a
 createKey = clientFnWrapper "user" "createKey"
 
-updateKey :: ApiFn
+updateKey :: forall a. ApiFn a
 updateKey = clientFnWrapper "user" "updateKey"
 
-deleteKey :: ApiFn
+deleteKey :: forall a. ApiFn a
 deleteKey = clientFnWrapper "user" "deleteKey"

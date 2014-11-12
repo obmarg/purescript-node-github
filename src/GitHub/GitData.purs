@@ -2,41 +2,41 @@ module GitHub.GitData where
 
 import GitHub.Common
 
-getBlob :: ApiFn
+getBlob :: forall a. ApiFn a
 getBlob = clientFnWrapper "gitdata" "getBlob"
 
-createBlob :: ApiFn
+createBlob :: forall a. ApiFn a
 createBlob = clientFnWrapper "gitdata" "createBlob"
 
-getCommit :: ApiFn
+getCommit :: forall a. ApiFn a
 getCommit = clientFnWrapper "gitdata" "getCommit"
 
-createCommit :: ApiFn
+createCommit :: forall a. ApiFn a
 createCommit = clientFnWrapper "gitdata" "createCommit"
 
-getReference :: ApiFn
+getReference :: forall a. ApiFn a
 getReference = clientFnWrapper "gitdata" "getReference"
 
-getAllReferences :: ApiFn
+getAllReferences :: forall a. ApiFn a
 getAllReferences = clientFnWrapper "gitdata" "getAllReferences"
 
-createReference :: ApiFn
+createReference :: forall a. ApiFn a
 createReference = clientFnWrapper "gitdata" "createReference"
 
-updateReference :: ApiFn
+updateReference :: forall a. ApiFn a
 updateReference = clientFnWrapper "gitdata" "updateReference"
 
-deleteReference :: ApiFn
+deleteReference :: forall a. ApiFn a
 deleteReference = clientFnWrapper "gitdata" "deleteReference"
 
-getTag :: ApiFn
+getTag :: forall a. ApiFn a
 getTag = clientFnWrapper "gitdata" "getTag"
 
-createTag :: ApiFn
+createTag :: forall a. ApiFn a
 createTag = clientFnWrapper "gitdata" "createTag"
 
-getTree :: ApiFn
+getTree :: forall a. ApiFn a
 getTree = clientFnWrapper "gitdata" "getTree"
 
-createTree :: ApiFn
+createTree :: forall a. ApiFn a
 createTree = clientFnWrapper "gitdata" "createTree"
