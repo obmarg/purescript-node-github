@@ -8,13 +8,14 @@
     "tests",
     "externs",
     "js",
-    "tmp"
+    "tmp",
+    "utils"
   ],
   "dependencies": {
     "purescript-arrays": "*",
     "purescript-maybe": "*",
     "purescript-foldable-traversable": "*",
-    "purescript-node-thunk": "~0.1.2",
+    "purescript-node-thunk": "git@github.com:andyfriesen/purescript-node-thunk.git#master",
     "purescript-either": "~0.1.4"
   },
   "devDependencies": {
