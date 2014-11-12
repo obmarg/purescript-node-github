@@ -1,6 +1,12 @@
 {
   "name": "purescript-node-github",
-  "private": true,
+  "version": "0.1.0",
+  "authors": [
+      "Graeme Coupar <grambo@grambo.me.uk>"
+  ],
+  "description": "A PureScript wrapper around node-github for working with the GitHub API",
+  "keywords": ["purescript", "github", "api", "node"],
+  "homepage": "https://github.com/obmarg/purescript-node-github",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -11,6 +17,7 @@
     "tmp",
     "utils"
   ],
+  "license": "MIT",
   "dependencies": {
     "purescript-arrays": "*",
     "purescript-maybe": "*",
