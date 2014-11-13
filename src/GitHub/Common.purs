@@ -22,7 +22,17 @@ foreign import getClientFn """
     function getClientFn(propName) {
     return function(fnName){
     return function(client) {
-        return client[propName][fnName];
+        // TODO: Possibly need to bind this?
+        var fn = client[propName][fnName];
+
+        if (!client.__auth) {
+            return fn;
+        } else {
+            return function() {
+                client.authenticate(client.__auth);
+                return fn.apply(null, arguments);
+            }
+        }
     }}}
 """ :: forall a. String -> String -> Client -> ClientFn a
 
